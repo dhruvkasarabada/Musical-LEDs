@@ -1,6 +1,6 @@
 #include <FastLED.h>
 
-#define NUM_LEDS 10
+#define NUM_LEDS 20
 #define LED_PIN 2
 
 CRGB leds[NUM_LEDS];
@@ -11,113 +11,72 @@ void setup() {
 }
 
 void loop() {
-  fill_gradient_RGB(leds, NUM_LEDS, CRGB::Magenta, CRGB::Yellow);
-  FastLED.show();
-  delay(5000);
+  gradient(0, NUM_LEDS-1, CRGB::Magenta, CRGB::Yellow, 5000);
+  gradient(0, NUM_LEDS-1, CRGB::Purple, CRGB::Red, 5000);
 
-  fill_gradient_RGB(leds, NUM_LEDS, CRGB::Purple, CRGB::Red);
-  FastLED.show();
-  delay(5000);
+  flash(0, NUM_LEDS-1, CRGB::Red, 22000);
+  flash(0, NUM_LEDS-1, CRGB::Black, 500);
+  flash(0, NUM_LEDS-1, CRGB::White, 500);
 
-  int i;
-  for(i=0;i<NUM_LEDS;i++) {
-    leds[i] = CRGB::Red; 
-  }
-  FastLED.show(); 
-  delay(22000);
-
-  for(i=NUM_LEDS-1;i>=0;i--) {
-    leds[i] = CRGB::Black; 
-  }
-  FastLED.show();
-  delay(500); 
-
-  FastLED.setBrightness(100);
-  
-  for(i=0;i<NUM_LEDS;i++) {
-    leds[i] = CRGB::White; 
-  }
-  FastLED.show();
-  delay(500);
-
-  FastLED.setBrightness(50);
-
-  int count=0;
-
-  while(count<12) {
-    for(i=0;i<NUM_LEDS/2;i++) {
-      leds[i] = CRGB::Blue; 
-    }
-    FastLED.show();
-    delay(500);
-  
-    for(i=0;i<NUM_LEDS;i++) {
-      leds[i] = CRGB::Blue; 
-    }
-    FastLED.show();
-    delay(500);
-    
-    for(i=NUM_LEDS-1;i>=0;i--) {
-      leds[i] = CRGB::Black; 
-    }
-    FastLED.show();
-    delay(500);
- 
+  int count=1;
+  while(count<13) {
+    throb(0, NUM_LEDS-1, CRGB::Blue, 500);
     count++;
   }
 
-  count=0;
+  count=1;
   while(count<6) {
-    for(i=0;i<NUM_LEDS/2;i++) {
-      leds[i] = CRGB::Purple; 
-    }
-    FastLED.show();
-    delay(500);
-  
-    for(i=0;i<NUM_LEDS;i++) {
-      leds[i] = CRGB::Purple; 
-    }
-    FastLED.show();
-    delay(500);
-    
-    for(i=NUM_LEDS-1;i>=0;i--) {
-      leds[i] = CRGB::Black; 
-    }
-    FastLED.show();
-    delay(500);
-  
+    throb(0, NUM_LEDS-1, CRGB::Purple, 500); 
     count++;
   }
 
   count=0;
   while(count<25) {
-    for(i=0;i<NUM_LEDS;i++) {
-      leds[i] = CRGB::Orange;    
-    }
-    FastLED.show();
-    delay(100);
+    flash(0, NUM_LEDS-1, CRGB::Orange, 100);
+    flash(0, NUM_LEDS-1, CRGB::Black, 100);
+    count++;
+  }
+   
+  flash(0, NUM_LEDS-1, CRGB::White, 10000);
+}
+
+void flash(int startLEDIdx, int endLEDIdx, CRGB color, int delayTime) {
+
+  int numLEDs = endLEDIdx - startLEDIdx + 1;
   
-    for(i=0;i<NUM_LEDS;i++) {
-      leds[i] = CRGB::Orange; 
+  for(int i=startLEDIdx;i<numLEDs;i++) {
+    leds[i] = color; 
+  }
+  
+  FastLED.show(); 
+  delay(delayTime);
+}
+
+void gradient(int startLEDIdx, int endLEDIdx, CRGB color1, CRGB color2, int delayTime) {
+    int numLEDs = endLEDIdx - startLEDIdx + 1;
+    fill_gradient_RGB(leds, numLEDs, color1, color2);
+    FastLED.show();
+    delay(delayTime);
+}
+
+void throb(int startLEDIdx, int endLEDIdx, CRGB color, int delayTime) {
+    int numLEDs = endLEDIdx - startLEDIdx + 1;
+    
+    for(int i=startLEDIdx;i<numLEDs/2;i++) {
+      leds[i] = color; 
     }
     FastLED.show();
-    delay(100);
+    delay(delayTime);
+  
+    for(int i=startLEDIdx;i<numLEDs;i++) {
+      leds[i] = color; 
+    }
+    FastLED.show();
+    delay(delayTime);
     
-    for(i=NUM_LEDS-1;i>=0;i--) {
+    for(int i=numLEDs-1;i>=startLEDIdx;i--) {
       leds[i] = CRGB::Black; 
     }
     FastLED.show();
-    delay(100);
-  
-    count++;
-  }
-
-   FastLED.setBrightness(100);
-   
-   for(i=0;i<NUM_LEDS;i++) {
-      leds[i] = CRGB::White; 
-    }
-    FastLED.show();
-
-  delay(10000);
+    delay(delayTime);
 }
