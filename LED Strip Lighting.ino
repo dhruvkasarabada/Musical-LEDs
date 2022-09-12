@@ -44,7 +44,7 @@ void flash(int startLEDIdx, int endLEDIdx, CRGB color, int delayTime) {
 
   int numLEDs = endLEDIdx - startLEDIdx + 1;
   
-  for(int i=startLEDIdx;i<numLEDs;i++) {
+  for(int i=startLEDIdx;i<startLEDIdx+numLEDs;i++) {
     leds[i] = color; 
   }
   
@@ -62,19 +62,19 @@ void gradient(int startLEDIdx, int endLEDIdx, CRGB color1, CRGB color2, int dela
 void throb(int startLEDIdx, int endLEDIdx, CRGB color, int delayTime) {
     int numLEDs = endLEDIdx - startLEDIdx + 1;
     
-    for(int i=startLEDIdx;i<numLEDs/2;i++) {
+    for(int i=startLEDIdx;i<startLEDIdx+numLEDs/2;i++) {
       leds[i] = color; 
     }
     FastLED.show();
     delay(delayTime);
   
-    for(int i=startLEDIdx;i<numLEDs;i++) {
+    for(int i=startLEDIdx;i<startLEDIdx+numLEDs;i++) {
       leds[i] = color; 
     }
     FastLED.show();
     delay(delayTime);
     
-    for(int i=numLEDs-1;i>=startLEDIdx;i--) {
+    for(int i=startLEDIdx+numLEDs-1;i>=startLEDIdx;i--) {
       leds[i] = CRGB::Black; 
     }
     FastLED.show();
