@@ -20,5 +20,5 @@ Below are two demos of my musical LEDs -
 
 ## Workshop
 
-Here is a 10 minute [Musical LED Video](https://youtu.be/rfhRKKA4tng) of the workshop that I organized for the students!
+Here is a [10 minute video](https://youtu.be/rfhRKKA4tng) of the workshop that I organized for the students!
 
