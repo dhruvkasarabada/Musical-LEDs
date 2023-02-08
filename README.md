@@ -10,7 +10,7 @@ After this, I researched into purchasing the right materials for this project, i
 
 Finally, the [FastLED Basics - Getting Started](https://www.youtube.com/watch?v=4Ut4UK7612M) tutorial helped me understand how LED Strips can be programmed using the Arduino UNO. This is the [Wiring Diagram](https://github.com/dhruvkasarabada/Musical-LEDs/blob/0509d21e09bc2d4bf167a8c744f5c99da1c7b50c/MusicalLEDs_WiringDiagram.jpg) that I used for my LED strip connections.
 
-Once the LED strips were successfully being lit, the next set of challenges was to synchronize the LEDs with the music, using various lighting effects like the rainbow, gradient, throb, and flash effects. This required me to ensure I had the right number of loops and delay times in my code, such that the lighting effects synchronized with the music being played. The end result was the [Musical LEDs Code](https://github.com/dhruvkasarabada/Musical-LEDs/blob/6e705838b248280943404268e7cb3a55a434190f/Musical-LEDs_SourceCode.ino)   
+Once the LED strips were successfully being lit, the next set of challenges was to synchronize the LEDs with the music, using various lighting effects like the rainbow, gradient, throb, and flash effects. This required me to ensure I had the right number of loops and delay times in my code, such that the lighting effects synchronized with the music being played. The end result was [my first Musical LEDs Code](https://github.com/dhruvkasarabada/Musical-LEDs/blob/6e705838b248280943404268e7cb3a55a434190f/Musical-LEDs_SourceCode.ino)   
 
 ## Demo
 
