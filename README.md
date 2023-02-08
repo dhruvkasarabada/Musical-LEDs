@@ -6,11 +6,11 @@ This project was part of a coding workshop that I organized last year for middle
 
 
 ## Prototyping
-[Bread Board](https://github.com/dhruvkasarabada/Musical-LEDs/blob/770fdc4d481773e69207faeb1c47b1872d680d81/Musical-LEDs_BreadboardConnections.jpg)
-[Wiring Diagram](https://github.com/dhruvkasarabada/Musical-LEDs/blob/0509d21e09bc2d4bf167a8c744f5c99da1c7b50c/MusicalLEDs_WiringDiagram.jpg)
-[Presentation](https://docs.google.com/presentation/d/1qcGSBtj7xbaZQt9_F7z-jyj9A-zaBjV4/edit?usp=share_link&ouid=113965266884810213444&rtpof=true&sd=true)
-[Prototype 1](https://youtu.be/e6JCKlPPa_w)
-[Prototype 2](https://youtu.be/frOS0C6W0QQ)
+* [Bread Board](https://github.com/dhruvkasarabada/Musical-LEDs/blob/770fdc4d481773e69207faeb1c47b1872d680d81/Musical-LEDs_BreadboardConnections.jpg)
+* [Wiring Diagram](https://github.com/dhruvkasarabada/Musical-LEDs/blob/0509d21e09bc2d4bf167a8c744f5c99da1c7b50c/MusicalLEDs_WiringDiagram.jpg)
+* [Presentation](https://docs.google.com/presentation/d/1qcGSBtj7xbaZQt9_F7z-jyj9A-zaBjV4/edit?usp=share_link&ouid=113965266884810213444&rtpof=true&sd=true)
+* [Prototype 1](https://youtu.be/e6JCKlPPa_w)
+* [Prototype 2](https://youtu.be/frOS0C6W0QQ)
 
 ## Workshop
 [Workshop video](https://youtu.be/rfhRKKA4tng)
