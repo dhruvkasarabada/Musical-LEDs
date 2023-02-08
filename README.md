@@ -7,8 +7,8 @@ This project was part of a coding workshop that I organized last year for middle
 
 ## Prototyping
 [Presentation](https://github.com/dhruvkasarabada/Musical-LEDs/blob/main/Musical-LEDs_DesignCode.pptx)
-[Prototype 1](https://github.com/dhruvkasarabada/Musical-LEDs/blob/main/Musical-LEDs_VisualPrototype1.mp4)
-[Prototype 2](https://github.com/dhruvkasarabada/Musical-LEDs/blob/main/Musical-LEDs_VisualPrototype2.mov)
+[Prototype 1](https://youtu.be/e6JCKlPPa_w)
+[Prototype 2](https://youtu.be/frOS0C6W0QQ)
 
 ## Workshop
 [Workshop video](https://youtu.be/rfhRKKA4tng)
