@@ -15,8 +15,8 @@ Once the LED strips were successfully being lit, the next set of challenges was 
 ## Demo
 
 Below are two demos of my musical LEDs - 
-* [Musical LED Visual Test 1](https://youtu.be/e6JCKlPPa_w)
-* [Musical LED Visual Test 2](https://youtu.be/frOS0C6W0QQ)
+* [Musical LED Audio/Video Test 1](https://youtu.be/e6JCKlPPa_w)
+* [Musical LED Audio/Video Test 2](https://youtu.be/frOS0C6W0QQ)
 
 ## Workshop
 
