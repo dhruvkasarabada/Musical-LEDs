@@ -23,4 +23,3 @@ Below are two demos of my musical LEDs -
 I organized the workshop for two days. On day one, I taught the basics of coding, including the concepts of variables and loops. Then I helped the students light up the LEDs with their code. On day two we attached the LED strips to our dance costumes and performed a dry run.
 
 Here is a [presentation](https://docs.google.com/presentation/d/1qcGSBtj7xbaZQt9_F7z-jyj9A-zaBjV4/edit?usp=share_link&ouid=113965266884810213444&rtpof=true&sd=true) and a [10 minute video](https://youtu.be/rfhRKKA4tng) of the workshop that I organized for the students!
-
